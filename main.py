@@ -10,7 +10,10 @@
 #     If d_n represents the nth digit of the fractional part, find the value of the following expression.
 #         d_1 × d_10 × d_100 × d_1000 × d_10000 × d_100000 × d_1000000
 
-def main(n):
+from typing import List, Tuple
+
+
+def main(n: int) -> Tuple[List[int], int]:
     """
     Returns the list of digits {d_{10^i}} for `i` in [0, n-1]
       of Champernowne's constant, as well as their product.
